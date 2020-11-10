@@ -1,7 +1,5 @@
-{
-"posts":[
-{"id":0, date:"10-11-2020", "title":"First Post!", "tags":["blog","js","test"] }
+{ "posts":[
 
-]
+{"id":0, "date":"10-11-2020", "title":"First Post!", "tags":["blog","js","test"] }
 
-}
+]}
