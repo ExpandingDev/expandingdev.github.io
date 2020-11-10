@@ -10,6 +10,11 @@ html, body {
     font-family: serif;
 }
 
+#titlebar h3 {
+    font-family: monospace;
+    color: #BBB;
+}
+
 #container {
 }
 
