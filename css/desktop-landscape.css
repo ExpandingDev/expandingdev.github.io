@@ -1,0 +1,91 @@
+#navbar {
+    display: block;
+    height: 50px;
+    background-color: #018;
+    color: #FFF;
+    font-family: sans-serif;
+}
+
+#navbar .nav-item {
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: left;
+    background-color: #018;
+    height: 50px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#navbar .nav-item :hover {
+    background-color: #22A;
+}
+
+#navbar .nav-item span {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+}
+
+#navbar .nav-item .nav-item-child {
+    display: list-item;
+    list-style-type: none;
+    z-index: 2;
+    background-color: #129;
+    color: #FFF;
+    text-align: left;
+    position: relative;
+    border-left: 2px solid black;
+}
+
+#navbar .nav-item .nav-item-child :hover {
+    background-color: #FFF;
+    color: #018;
+}
+
+#titlebar {
+    height: 80px;
+    width: 100%;
+    background-color: #222;
+    color: #FFF;
+    overflow: hidden;
+}
+
+#titlebar h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    font-size: 35px;
+}
+
+#titlebar #contactbar {
+    float: right;
+    color: #FFF;
+}
+
+#container {
+    background-color: #EEE;
+    padding: 0 1% 0 1%;
+    height: 90%;
+}
+
+#content {
+    z-index: 1;
+    padding: 1% 2% 10% 2%;
+    min-height: 70%;
+    background-color: #FFF;
+    color: #000;
+    position: relative;
+}
+
+#content h2 {
+    display: block;
+    border-bottom: 5px solid black;
+    font-family: serif;
+    font-size: 30px;
+}
+
+#content p {
+    font-family: sans-serif;
+}
