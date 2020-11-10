@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 
 	<title>Tyler Sengia</title>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/main.css" />
-	<link rel="stylesheet" type="text/css" href="../css/desktop-landscape.css" />
+	<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+	<script src="https://unpkg.com/showdown@1.9.0/dist/showdown.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/desktop-landscape.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
 </head>
 <body>
 
@@ -31,12 +32,19 @@
 
 <div id="container" >
         <section id="content" >
-        <h2>Blog Index</h2>
-        <p>This is where I'll be putting my most recent blog posts...</p>
+        <h2>{{ title }}</h2>
+        <p>{{ content }}</p>
         <!-- TODO: Most recent blog post. Most recent project. -->
+        <blog-post selected-post=0 >
+        </blog-post>
         </section>
+        
+        
 </div>
 
 <script type="text/javascript" src="../js/navbar.js" ></script>
+
+<script type="text/javascript" src="../js/blog-display-component.js" ></script>
+<script type="text/javascript" src="../js/blog.js" ></script>
 </body>
 </html>
