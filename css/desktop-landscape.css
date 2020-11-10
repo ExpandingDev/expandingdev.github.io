@@ -43,7 +43,7 @@
 }
 
 #titlebar {
-    height: 80px;
+    height: 100px;
     width: 100%;
     background-color: #222;
     color: #FFF;
@@ -57,6 +57,15 @@
     left: 25px;
     top: 20px;
     font-size: 35px;
+}
+
+#titlebar h3 {
+    position: absolute;
+    font-family: monospace;
+    color: #DDD;
+    font-style: italic;
+    left: 25px;
+    top: 55px;
 }
 
 #titlebar #contactbar {
