@@ -4,10 +4,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 
-	<title>Tyler Sengia | About</title>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="stylesheet" type="text/css" href="css/desktop-landscape.css" />
+	<title>Tyler Sengia</title>
+	<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+	<script src="https://unpkg.com/showdown@1.9.0/dist/showdown.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/desktop-landscape.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
 </head>
 <body>
 
@@ -29,13 +31,12 @@
 </div>
 
 <div id="container" >
-        <section id="content" >
-        <h2>About</h2>
-        <p>About - This is some filler content so that I can figure out the CSS of my site.</p>
-        <!-- TODO: Most recent blog post. Most recent project. -->
+        <section id="blog-view" >
+            <blog-post v-if="displayPost" v-bind:post="selectedPost" />
         </section>
 </div>
 
-<script type="text/javascript" src="js/navbar.js" ></script>
+<script type="text/javascript" src="../js/navbar.js" ></script>
+<script type="text/javascript" src="../js/blog.js" ></script>
 </body>
 </html>

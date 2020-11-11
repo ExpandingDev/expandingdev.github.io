@@ -1,5 +1,6 @@
 { "posts":[
 
-{"id":0, "date":"10-11-2020", "title":"First Post!", "tags":["blog","js","test"] }
+{"id":0, "date":"Nov. 10th, 2020", "title":"First Post!", "description":"I have fun spamming my blog with test posts.", "tags":["blog","js","test"] },
+{"id":1, "date":"Nov. 11th, 2020", "title":"Second Post!", "description":"This is another spam blog post for testing.", "tags":["blog","axios","test2"] }
 
 ]}
