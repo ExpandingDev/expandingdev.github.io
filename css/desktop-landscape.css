@@ -98,3 +98,39 @@
 #content p {
     font-family: sans-serif;
 }
+
+.blog-post-listing {
+    display: block;
+    border-bottom: 3px solid #DDD;
+    padding: 10px 0 10px 20px;
+    width: 80%;
+}
+
+div .blog-post-listing h3 {
+    font-family: sans-serif;
+    font-size: 32px;
+    text-decoration: underline;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.blog-post-description {
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.blog-post-tag {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 10px;
+    background-color: #CDF;
+    color: #46F;
+    padding: 3px 2px 3px 2px;
+    margin-right: 5px;
+}
+
+.blog-post-date {
+    font-family: sans-serif;
+    font-size: 14px;
+}

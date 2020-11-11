@@ -10,6 +10,16 @@ html, body {
     font-family: serif;
 }
 
+#username-tag a {
+    text-decoration: none;
+    color: #EEE;
+}
+
+#username-tag a :visited {
+    color: #EEE;
+    text-decoration: none;  
+}
+
 #container {
 }
 
