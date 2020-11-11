@@ -150,7 +150,7 @@ div .blog-post-content {
     font-family: serif;
     font-size: 1.2em;
     line-height: 1.5em;
-    color: #111;
+    color: #050505;
     width: 52%;
     padding-left: 18%;
 }
@@ -191,7 +191,4 @@ div .blog-post-content {
 
 .blog-post-content .hljs pre code {
     background-color: #DDD;
-}navbar .nav-item : {
-    background-color: #55F;
-    color: #F00;
 }
