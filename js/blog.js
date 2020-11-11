@@ -145,5 +145,13 @@ Vue.component("blog-post", {
 		    console.error(error);
 		});
 	},
-	template: "<div class='blog-post' v-html='htmlContent'></div>"
+	updated: function () {
+	      document.querySelectorAll('pre code').forEach((block) => {
+            console.log("Running highlighter");
+            hljs.highlightBlock(block);
+          });  
+	},
+	template: "<div class='blog-post-content' ><div class='blog-post-title' >{{ post.title }}</div><div class='blog-post-date' >Posted by Tyler Sengia on: {{ post.date }}</div>\
+	<span class='blog-post-tag' v-for='t in post.tags' >{{ t }}</span><br />\
+	<div v-html='htmlContent' ></div></div>"
 });
