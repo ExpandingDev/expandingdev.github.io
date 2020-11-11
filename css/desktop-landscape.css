@@ -32,11 +32,6 @@ Font sizes:
     font-weight: normal;
 }
 
-#navbar .nav-item span {
-    display: inline-block;
-    padding: 0% 10% 0% 10%;
-}
-
 #navbar .nav-item :hover {
     background-color: #55F;
 }
