@@ -1,6 +1,6 @@
 { "posts":[
 
-{"id":0, "date":"Nov. 10th, 2020", "title":"First Post!", "description":"I have fun spamming my blog with test posts.", "tags":["blog","js","test"] },
-{"id":1, "date":"Nov. 11th, 2020", "title":"Second Post!", "description":"This is another spam blog post for testing.", "tags":["blog","axios","test2"] }
+{"id":0, "date":"Nov. 10th, 2020", "title":"About Me", "description":"Introduction to me and what I do :)", "tags":["intro"] },
+{"id":1, "date":"Nov. 11th, 2020", "title":"Broken (WebAudio) Promises", "description":"Turns out that FireFox's WebAudio can be difficult...", "tags":["firefox","webaudio","js"] }
 
 ]}
