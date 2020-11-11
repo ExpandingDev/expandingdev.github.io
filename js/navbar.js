@@ -1,8 +1,8 @@
 // Remember to change this before pushing to prod... no pressure :)
 
-var BASE_URL = "https://expandingdev.github.io/";
-if (window.location.host == "localhost") {
-    BASE_URL = "http://localhost/~rectangle/expandingdev.github.io/";
+var BASE_URL = window.location.protocol + "//" + window.location.host + "/";
+if (window.location.host != "expandingdev.github.io") { // So we're not in production
+    BASE_URL = BASE_URL + "~rectangle/expandingdev.github.io/";
 }
 
 var vm = new Vue({
