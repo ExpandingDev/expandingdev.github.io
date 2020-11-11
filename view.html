@@ -20,14 +20,11 @@
 <div id="titlebar" >
     <h1>Tyler Sengia</h1>
     <h3 id="username-tag" ><a href="https://github.com/ExpandingDev/">@ExpandingDev</a></h3>
-    <div id="contact-bar" >
-        <!-- TODO: Add icons for Github and other links -->    
-    </div>
 </div>
 
 <div id="navbar" >
-    <div class="nav-item" v-for="t in tabs" >
-        <span v-on:click="selectTab(t)" >{{ t.title }}</span>
+    <div class="nav-item" v-for="t in tabs" v-on:click="selectTab(t)" >
+        <span>{{ t.title }}</span>
     
         <span class="nav-item-child" v-on:click="t.expanded = false" v-if="t.expanded && t.children.length > 0" >&lt; Back</span>
         <span class="nav-item-child" v-if="t.expanded && t.children.length > 0" v-for="c in t.children" v-on:click="selectTab(c)" >{{ c.title }}</span>    

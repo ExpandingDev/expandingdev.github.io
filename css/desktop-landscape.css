@@ -13,25 +13,32 @@ Font sizes:
 
 #navbar {
     display: block;
-    height: 42px;
-    background-color: #018;
+    background-color: #13A;
     color: #FFF;
     font-family: sans-serif;
+    z-index: 1;
+    height: 2.6em;
+    line-height: 2.6em;
 }
 
 #navbar .nav-item {
+    z-index: 0;
     display: inline-block;
-    line-height: 42px;
-    vertical-align: middle;
+    line-height: 2.6em;
+    vertical-align: top;
     text-align: left;
-    background-color: #018;
-    height: 42px;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: #13A;
+    cursor: pointer;    
+    font-weight: normal;
+}
+
+#navbar .nav-item span {
+    display: inline-block;
+    padding: 0% 10% 0% 10%;
 }
 
 #navbar .nav-item :hover {
-    background-color: #22A;
+    background-color: #55F;
 }
 
 #navbar .nav-item span {
@@ -56,7 +63,7 @@ Font sizes:
 }
 
 #titlebar {
-    height: 130px;
+    height: 10em;
     width: 100%;
     background-color: #222;
     color: #FFF;
@@ -67,9 +74,9 @@ Font sizes:
     margin: 0;
     padding: 0;
     position: absolute;
-    left: 25px;
-    top: 20px;
-    font-size: 42px;
+    left: 1%;
+    top: 0.5em;
+    font-size: 2.7em;
     font-family: sans-serif;
 }
 
@@ -78,31 +85,28 @@ Font sizes:
     font-family: monospace;
     color: #DDD;
     font-style: italic;
-    left: 25px;
-    top: 58px;
+    left: 1%;
+    top: 4em;
+    font-size: 1.4em;
 }
 
 #username-tag {
     font-size: 20px;
 }
 
-#titlebar #contactbar {
-    float: right;
-    color: #FFF;
-}
-
 #container {
     background-color: #EEE;
     padding: 0% 3% 0% 3%;
+    min-height: 80.5%;
+    display: block;
 }
 
 #content {
     z-index: 1;
-    padding: 4% 2% 4% 2%;
-    min-height: 70%;
+    padding: 3% 2% 1% 2%;
     background-color: #FFF;
     color: #000;
-    position: relative;
+    min-height: 96%;
 }
 
 .blog-post-listing {
@@ -192,4 +196,7 @@ div .blog-post-content {
 
 .blog-post-content .hljs pre code {
     background-color: #DDD;
+}navbar .nav-item : {
+    background-color: #55F;
+    color: #F00;
 }
