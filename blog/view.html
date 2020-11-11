@@ -31,8 +31,10 @@
 </div>
 
 <div id="container" >
-        <section id="blog-view" >
-            <blog-post v-if="displayPost" v-bind:post="selectedPost" />
+        <section id="content" >
+            <div id="blog-view" >
+                <blog-post v-if="displayPost" v-bind:post="selectedPost" />
+            </div>
         </section>
 </div>
 
