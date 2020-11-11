@@ -1,13 +1,16 @@
 // Remember to change this before pushing to prod... no pressure :)
+
 var BASE_URL = "https://expandingdev.github.io/";
-//var BASE_URL = "http://localhost/~rectangle/expandingdev.github.io/";
+if (window.location.host == "localhost") {
+    BASE_URL = "http://localhost/~rectangle/expandingdev.github.io/";
+}
 
 var vm = new Vue({
 		el: "#navbar",
 		data: {
 		  showBack: false,
 		  tabs: [ { id:0, title: "Blog", children:[], url: "index.html", expanded: false },
-		          { id:1, title:"About", children:[], url: "about.html", expanded: false },
+		          { id:1, title:"About", children:[], url: "view.html?p=0", expanded: false },
 		          { id:2, title: "Projects", children:[], url: "projects.html", expanded: false }
 		           ]
 		},
