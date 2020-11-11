@@ -1,12 +1,5 @@
 var markdownConverter = new showdown.Converter();
 
-// Remember to change this before pushing to prod... no pressure :)
-var BASE_URL = "https://expandingdev.github.io/";
-
-function stripMarkdownCharacters(str) {
-
-}
-
 // Thanks to: https://stackoverflow.com/questions/5448545/how-to-retrieve-get-parameters-from-javascript/
 function findGetParameter(parameterName) {
     var result = null,
@@ -37,7 +30,7 @@ var blogApp = new Vue({
         var a = this;
         axios({
             method: "get",
-            url: "manifest.json",
+            url: "blog/manifest.json",
             responseType: "json"
         }).then(function (response) {
             a.postList = response.data.posts;
@@ -72,7 +65,7 @@ Vue.component("blog-post-listing", {
     },
     methods: {
         clicked: function () {
-            window.location = BASE_URL + "blog/view.html?p=" + this.post.id;   
+            window.location = BASE_URL + "view.html?p=" + this.post.id;   
         }
     },
     template: "<div class='blog-post-listing' v-on:click='clicked()' >\
@@ -99,7 +92,7 @@ Vue.component("blog-post-preview", {
         var a = this;
         axios({
             method: "get",
-            url: a.post.id + ".md",
+            url: "blog/" + a.post.id + ".md",
             responseType: "text"
         }).then(function (response) {
             a.markup = response.data;
@@ -135,7 +128,7 @@ Vue.component("blog-post", {
 	    var a = this;
 	    axios({
 			method: "get",
-			url: a.post.id + ".md",
+			url: "blog/" + a.post.id + ".md",
 			responseType: "text"
 		}).then(function (response) {
 			a.markdown = response.data;
